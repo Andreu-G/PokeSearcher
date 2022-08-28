@@ -5,7 +5,7 @@ function Start()
 
 async function GetAllPokemon()
 {
-    let pokemons = await fetch('http://pokeapi.co/api/v2/pokemon/?limit=200').then(response => response.json());
+    let pokemons = await fetch('https://pokeapi.co/api/v2/pokemon/?limit=200').then(response => response.json());
 
   for (const pokemon of pokemons.results) {
     let pokeDetails = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`).then(response => response.json());
