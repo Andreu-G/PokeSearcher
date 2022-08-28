@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(40, 50, 90);
+}
+
+body h3 {
+    text-align: center;
+    color: rgb(200, 200, 200);
+}
+
+#content {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    row-gap: 20px;
+    justify-items: center;
+
+}
+
+.pokemon-card {
+    width: 150px;
+    height: 200px;
+    border: 3px rgb(50, 50, 50) solid;
+    border-radius: 10px;
+    background-color: rgb(208, 174, 179);
+    text-align: -webkit-center;
+}
